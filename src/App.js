@@ -3,17 +3,21 @@ import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Navigation from './components/Navigation';
-import Map from './views/Map';
 import Alarma from './views/Alarma';
 import ServicioVoz from './views/Servicio-voz';
+
+import Mapa from './views/Mapa';
+import Navigation from './components/Navigation';
+
+
 
 function App() {
   return (
     <Router>
-      {/* <Navigation/> */}
+      {<Navigation/>}
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
-        <Route path="/Map" component={Map}/>
+        <Route path="/Mapa" component={Mapa}/>
         {/* <Route path="/create" component={CreateNote}/>
         <Route path="/user" component={CreateUser}/> */}
         <Route path="/Alarma" component={Alarma}/>
@@ -21,7 +25,7 @@ function App() {
 
       </div>
     </Router>
-  );
+  )
 }
 
 export default App;
