@@ -8,7 +8,7 @@ import Map from './views/Map';
 function App() {
   return (
     <Router>
-      {<Navigation/>}
+      <Navigation/>
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
         <Route path="/Map" component={Map}/>
