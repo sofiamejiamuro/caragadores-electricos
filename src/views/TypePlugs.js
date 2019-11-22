@@ -1,24 +1,34 @@
+import { data } from '../data.json';
 import React, { Component } from 'react';
-import Toggle from '../components/toggle';
-import data from '../'
+import Toggle from '../components/toggle'
 
 
-
-class TypePlugs extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        };
-    }
-
+export default class TypePlugs extends Component {
     render() {
         return (
             <div>
-                <Toggle />
+                <div>
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>Tipo de cargador</th>
+                                <th>Habilitar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.map((data, index) => {
+                                return (
+                                    <tr key={data.id}>
+                                        <td>{data.plug_type}</td>
+                                        <td><Toggle /></td>
+                                    </tr>
+                                );
+                            })}
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        );
+        )
     }
 }
-
-export default TypePlugs;
