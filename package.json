@@ -2,7 +2,7 @@
   "name": "cargadores-electricos",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://sofiamejiamuro.github.io/caragadores-electricos/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "leaflet": "^1.6.0",

@@ -17,7 +17,7 @@ import LectorQr from './views/LectorQr'
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ""}>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="nav">
       <Navigation></Navigation>
       </div>
