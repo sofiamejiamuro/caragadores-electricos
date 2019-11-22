@@ -13,6 +13,7 @@ render () {
 
                 <p>Ahora es tan fácil como ir manejando y decir: Alexa,  ¿cuál es el cargador 
                 más cercano? Para que Alexa con ayuda de nosotros te indique la dirección. </p>
+                
             <div className="Alexa-toggle">
                 <p>Activar Alexa</p>
                 <Toggle />
