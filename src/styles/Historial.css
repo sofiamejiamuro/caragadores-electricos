@@ -1,0 +1,35 @@
+.container-historial{
+    text-align: justify;
+    margin-top: 20px;
+   
+   
+}
+
+.historial-links {
+     margin: 35px;
+     text-decoration: none;
+     border-bottom: 1px solid  #C4C4C4;
+     color: black;
+     padding: 5px;
+     display: flex;
+     justify-content: space-between;
+}
+#boton-selec{
+    background-color: #12d3cf;
+    color: white;
+}
+.Selec-historial{
+  
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-buscador{
+    background-color: blue;
+    margin: 35px;
+}
+.buscador{
+    width: auto;
+    height: 45px;
+    border-radius: 8px;
+}

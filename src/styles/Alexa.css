@@ -1,0 +1,13 @@
+.container{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.container p {
+    margin: 15px;
+}
+.Alexa-toggle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

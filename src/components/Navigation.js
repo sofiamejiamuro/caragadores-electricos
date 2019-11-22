@@ -24,9 +24,9 @@ class Navigation extends React.Component {
           <Nav className="ml-auto">
             <Nav.Link href="#tipo-de-conexion"><img className="conexion mr-2" src={conexion} alt="conexion"/>Tipo de conexión</Nav.Link>
             <Nav.Link href="#reservas"><img className="reserva mr-2" src={reserva} alt="reserva"/>Reservas</Nav.Link>
-            <Nav.Link href="#alexa"><img className="alexa mr-2" src={alexa} alt="alexa"/>Alexa</Nav.Link>
+            <Nav.Link href="/Alexa"><img className="alexa mr-2" src={alexa} alt="alexa"/>Alexa</Nav.Link>
             <Nav.Link href="#alertas"><img className="alerta mr-2" src={alerta} alt="alerta"/>Alertas</Nav.Link>
-            <Nav.Link href="#historial"><img className="historia mr-2" src={historial} alt="alerta"/>Historial</Nav.Link>
+            <Nav.Link href="/Historial"><img className="historia mr-2" src={historial} alt="alerta"/>Historial</Nav.Link>
             <Nav.Link href="#ajustes"><img className="ajuste mr-2" src={ajuste} alt="ajuste"/>Ajuastes</Nav.Link>
             <Nav.Link href="#ayuda"><img className="ayuda mr-2" src={ayuda} alt="ayuda"/> Ayuda</Nav.Link>
             <Nav.Link href="#cerrar secion"><img className="cerrar mr-2" src={cerrar} alt="cerrar"/>Cerrar sesión</Nav.Link>
