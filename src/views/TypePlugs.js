@@ -1,8 +1,6 @@
 import { data } from '../data.json';
 import React, { Component, Fragment } from 'react';
 import Toggle from '../components/toggle'
-
-import Navigation from '../components/Navigation'
 import SideBar from '../components/Navigation';
 import './TypePlugs.css'
 
