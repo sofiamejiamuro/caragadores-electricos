@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Toggle from '../components/toggle';
 
 
 class Alarma extends React.Component {
@@ -49,9 +49,19 @@ class Alarma extends React.Component {
              </div>   
 
              <p>
-            {this.state.boton.map (boton => <p>{boton}</p>)}   
+            Servicio de voz 
+            <Toggle /> 
             </p>
-             
+
+
+            <p>
+            Sonido
+            <Toggle /> 
+            </p>
+            
+            {/* <p>
+            {this.state.boton.map (boton => <p>{boton }</p>)}  
+            </p> */}
             </div>
         );
     }

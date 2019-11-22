@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Historial1 extends React.Component {
     constructor (props){
         super(props) 
@@ -39,6 +40,7 @@ class Historial1 extends React.Component {
                 {this.state.historial1.map (historial1 => <p>{historial1}</p>)}    
 
                 </div>
+                
 
 
             </div>
