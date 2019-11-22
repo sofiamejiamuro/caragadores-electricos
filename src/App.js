@@ -8,14 +8,12 @@ import ServicioVoz from './views/Servicio-voz';
 
 import Mapa from './views/Mapa';
 import Navigation from './components/Navigation';
-<<<<<<< HEAD
 import Historial from './views/Historial';
 import Historial1 from './views/Historial1';
 import Historial2 from './views/Historial2';
 import Historial3 from './views/Historial3';
-=======
-import TypePlugs from './views/TypePlugs'
->>>>>>> upstream/master
+import TypePlugs from './views/TypePlugs';
+
 
 
 function App() {
@@ -24,7 +22,6 @@ function App() {
       {<Navigation />}
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
-<<<<<<< HEAD
         <Route path="/Mapa" component={Mapa}/>
         {/* <Route path="/create" component={CreateNote}/>
         <Route path="/user" component={CreateUser}/> */}
@@ -34,11 +31,9 @@ function App() {
         <Route path="/Historial1" component={Historial1}/>
         <Route path="/Historial2" component={Historial2}/>
         <Route path="/Historial3" component={Historial3}/>
-=======
-        <Route path="/Mapa" component={Mapa} />
         <Route path="/cargadores" component={TypePlugs} />
         {/* <Route path="/user" component={CreateUser} /> */}
->>>>>>> upstream/master
+
       </div>
     </Router>
   )
