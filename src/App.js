@@ -17,16 +17,16 @@ import TypePlugs from './views/TypePlugs';
 function App() {
   return (
     <Router>
-      <Navigation/>
+
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
 
-        <Route path="/Alarma" component={Alarma}/>
-        <Route path="/Servicio-voz" component={ServicioVoz}/>
-        <Route path="/Historial" component={Historial}/>
-        <Route path="/Historial1" component={Historial1}/>
-        <Route path="/Historial2" component={Historial2}/>
-        <Route path="/Historial3" component={Historial3}/>
+        <Route path="/Alarma" component={Alarma} />
+        <Route path="/Servicio-voz" component={ServicioVoz} />
+        <Route path="/Historial" component={Historial} />
+        <Route path="/Historial1" component={Historial1} />
+        <Route path="/Historial2" component={Historial2} />
+        <Route path="/Historial3" component={Historial3} />
         <Route path="/mapa" component={Mapa} />
         <Route path="/cargadores" component={TypePlugs} />
 
