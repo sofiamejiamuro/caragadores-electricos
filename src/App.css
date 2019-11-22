@@ -1,45 +1,61 @@
 #root {
    width: 100%;
-   height: 80vh;
+   height: 100vh;
 }
-
+.nav{
+   width: 100%;
+   height:  12%;
+}
 .padre{
    width: 100%;
-   height: 100%;
+   height: 88%;
+   background-color: FAFAFA;
+}
+
+
+.container-type {
+   width: 98%;
+   height: 80%;
 }
 
 .container-map{ 
-    width: 100%;
-    height: 100%;
-    box-shadow: 5px 5px 5px #888;
+    width: 98%;
+    height: 78%;
+   /*  box-shadow: 5px 5px 5px #888; */
     position : absolute;
     z-index: 0;
  }
 
 .leaflet-container {
     width: 100%;
-    height: 80vh;
-    
-  }
-  .container-qr{
-      width: 100%;
-      height: 80vh;
+    height: 100%;
   }
 
-  /* .lector-qr{
+.container-qr{
+   width: 100%;
+   height: 60%;
+
+  } 
+
+.container-qr h3 {
+   margin: 5% 0 5% 8%;
    width: 80%;
-   height: 80vh;
-  } */
-
-.btn-group-toggle{
-
+   height: 15%;
+   text-align: center;
+   font-size: 1rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: black;
+   font-weight: bolder;
+   background-color:#00A19E;
+   
+}
+.btn-group-toggle {
    position: relative;
-   bottom: 13%;
-   left: 5%;
-   z-index: 10000;
+   width: 10%;
+   z-index: 1000;
+   
   }
 
-  
 
 
   
