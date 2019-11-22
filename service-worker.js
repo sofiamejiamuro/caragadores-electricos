@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/caragadores-electricos/precache-manifest.a5f8c0c707087481205d8d96c5103fd1.js"
+  "/caragadores-electricos/precache-manifest.3ce964f6c35f3a423e226572cbe1ceaa.js"
 );
 
 self.addEventListener('message', (event) => {
