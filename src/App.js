@@ -23,7 +23,7 @@ function App() {
     </div>
     <div className="container p-1 padre">
         {/* <Route path="/" exact component={Login}/> */}
-
+        
         <Route path="/Notificaciones" component={Notificaciones}/>
         <Route path="/Alexa" component={Alexa}/>
         <Route path="/Historial" component={Historial}/>
@@ -33,6 +33,9 @@ function App() {
         <Route path="/mapa" component={Mapa} />
         <Route path="/cargadores" component={TypePlugs} />
         <Route path="/qr" component={LectorQr} />
+        <Route path="/Alarma" component={Alarma} />
+        <Route path="/Servicio-voz" component={ServicioVoz} />
+      
       </div>
     </Router>
   )
