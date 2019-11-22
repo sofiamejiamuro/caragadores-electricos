@@ -1,7 +1,7 @@
 import { data } from '../data.json';
 import React, { Component, Fragment } from 'react';
 import Toggle from '../components/toggle'
-
+import Title from '../components/Title'
 import Navigation from '../components/Navigation'
 import SideBar from '../components/Navigation';
 import './TypePlugs.css'
@@ -13,6 +13,9 @@ export default class TypePlugs extends Component {
     render() {
         return (
             <Fragment>
+
+                <Title text="Tipo de conexión" />
+
                 <div id="TypePlugs">
                     <SideBar pageWrapId={"page-wrap"} outerContainerId={"TypePlugs"} />
                 </div>
