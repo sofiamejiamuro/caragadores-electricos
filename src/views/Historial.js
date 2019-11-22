@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Historial.css';
+import Navigation from '../components/Navigation';
 
 class Historial extends React.Component {
     constructor (props){
@@ -29,6 +30,7 @@ class Historial extends React.Component {
     render (){
         return(
             <div className="container-historial">
+                <Navigation text="Historial de cargas" />
                 <div className="contenedor-buscador">
                     <input type="search" placeholder="Search" className="buscador"></input>
                 </div>    
