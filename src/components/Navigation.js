@@ -1,10 +1,10 @@
 import React from 'react';
-import { Navbar, Nav} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 class Navigation extends React.Component {
-    render() {
-        return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  render() {
+    return (
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">Nuestra App</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -18,8 +18,8 @@ class Navigation extends React.Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      );
-    }
+    );
+  }
 }
 
 export default Navigation;
