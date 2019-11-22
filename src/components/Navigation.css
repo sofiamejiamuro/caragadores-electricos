@@ -1,0 +1,24 @@
+.Navbar {
+    background:#12d3cf;
+    color:white;
+    font-weight: bold;
+}
+
+.Brand{
+    background:#12d3cf;
+    margin-left: 3px;
+    color:white;
+}
+
+.QR {
+    color:white;
+    margin-right: 3px;   
+}
+
+.toggle {
+    font-weight: bold;
+    color: black;
+}
+#responsive-navbar-nav {
+    background-color: white;
+}
