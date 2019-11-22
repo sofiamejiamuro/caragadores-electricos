@@ -1,24 +1,70 @@
-.Navbar {
-    background:#12d3cf;
-    color:white;
-    font-weight: bold;
+html,
+body {
+  margin: 0;
 }
 
-.Brand{
-    background:#12d3cf;
-    margin-left: 3px;
-    color:white;
+#App {
+  font-family: sans-serif;
+
+  height: 100vh;
 }
 
-.QR {
-    color:white;
-    margin-right: 3px;   
+#page-wrap {
+  text-align: center;
+
+  overflow: auto;
 }
 
-.toggle {
-    font-weight: bold;
-    color: black;
+.bm-item {
+  display: inline-block;
+
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: black;
+  transition: color 0.2s;
 }
-#responsive-navbar-nav {
-    background-color: white;
+
+.bm-item:hover {
+  color: black;
+}
+
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #ffffff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #ffffff;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.bm-overlay {
+  background: #ffffff;
 }
