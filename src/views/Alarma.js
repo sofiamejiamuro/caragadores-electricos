@@ -8,11 +8,13 @@ class Alarma extends React.Component {
           this.state={
               configuraciones:[
                   "Tiempo",
-                  "Porcentaje",
-                  "Servicio de voz",
-                  "Sonido",
-                  
-              ]
+                  "Porcentaje",  
+              ],
+
+            boton: [
+                "Servicio de voz",
+                "Sonido"
+            ]
           
       }
   }
@@ -23,13 +25,33 @@ class Alarma extends React.Component {
             <div className="container">
                 
             <h1>ALARMA</h1>
+            <div>
+                <p>Tiempo   
 
-            <ul>
-                {this.state.configuraciones.map (configuraciones => <li>{configuraciones}</li>)}
-            </ul>
-              
+                <select name="Tiempo" className="btn btn-primary">
+                    <option value="value1">30 min</option> 
+                    <option value="value2" selected>45 min</option>
+                    <option value="value3">1 hr</option>
+                </select>
+
+                </p>
             
-                
+            </div>
+
+            <div>
+                <p>Porcentaje
+                <select name="Porcentaje" className="btn btn-primary">
+                    <option value="value1">5%</option> 
+                    <option value="value2" selected>10%</option>
+                    <option value="value3">20%</option>
+                </select>
+                </p>
+             </div>   
+
+             <p>
+            {this.state.boton.map (boton => <p>{boton}</p>)}   
+            </p>
+             
             </div>
         );
     }
