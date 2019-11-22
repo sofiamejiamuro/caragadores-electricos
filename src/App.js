@@ -21,9 +21,10 @@ function App() {
     <div className = "nav" >
       <Navigation ></Navigation>
     </div>
+    
     <div className="container p-1 padre">
         {/* <Route path="/" exact component={Login}/> */}
-        
+
         <Route path="/Notificaciones" component={Notificaciones}/>
         <Route path="/Alexa" component={Alexa}/>
         <Route path="/Historial" component={Historial}/>
