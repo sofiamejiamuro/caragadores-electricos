@@ -9,22 +9,20 @@ export default class Mapa extends Component {
         lng: -102.296,
         data: data,
         zoom: 5,
-    }
+        cheked: null
+      }
 
-    filterFree = () => {
-        const free = data.filter(state => state.state === 'free')
+
+    handleChange = (e) => {
+        const name = e.target.name
         this.setState({
-            data: free
+            data: data.filter(state => state.state === name),
+            cheked: true ? false : true
         })
-    }
 
-    filterBusy = () => {
-        const busy = data.filter(state => state.state === 'free')
-        this.setState({
-            data: busy
-        })
     }
-
+        
+    
     render() {
         const center = [this.state.lat, this.state.lng]
         const locateOptions = {
@@ -55,10 +53,10 @@ export default class Mapa extends Component {
                 </Map>
                 <div className="btn-group btn-group-toggle" data-toggle="buttons">
                     <label className="btn btn-secondary active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked /> Disponible
+                        <input type="radio" name="free" id="option1" autocomplete="off" checked={this.state.cheked} onChange={this.handleChange}/> Disponible
                     </label>
                     <label className="btn btn-secondary">
-                        <input type="radio" name="options" id="option2" autocomplete="off" /> Ocupado
+                        <input type="radio" name="busy" id="option2" autocomplete="off" checked={this.state.cheked} onChange={this.handleChange}/> Ocupado
                     </label>
                 </div>
                
