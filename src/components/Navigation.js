@@ -1,26 +1,37 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import React from "react";
+import { slide as Menu } from "react-burger-menu";
+import { Link } from 'react-router-dom';
 
-class Navigation extends React.Component {
-  render() {
-    return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Nuestra App</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link href="#tipo-de-enchufe">Tipo de Enchufe</Nav.Link>
-            <Nav.Link href="/Alarma">Alarma</Nav.Link>
-            <Nav.Link href="/Servicio-voz">Servicio de voz</Nav.Link>
-            <Nav.Link href="/Historial">Historial de consumo</Nav.Link>
-            <Nav.Link href="#consulta-de-consumos">Consulta de Consumos</Nav.Link>
-            <Nav.Link href="#ayuda">Ayuda</Nav.Link>
-            <Nav.Link href="#cerrar-sesión">Cerrar Sesión</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
-}
+import './Navigation.css'
 
-export default Navigation;
+export default props => {
+  return (
+    // Pass on our props
+    <Menu {...props}>
+      <li className="nav-item">
+        <Link to="/mapa" className="nav-link">
+          Tipo de conexión
+        </Link>
+      </li>
+
+      <li className="nav-item">
+
+        <Link to="/mapa" className="nav-link">
+          Recervas
+      </Link>
+      </li>
+      <li className="nav-item">
+
+        <Link to="/mapa" className="nav-link">
+          Alexa
+     </Link>
+      </li>
+      <li className="nav-item">
+
+        <Link to="/mapa" className="nav-link">
+          Notificaciones
+      </Link>
+      </li>
+    </Menu>
+  );
+};
