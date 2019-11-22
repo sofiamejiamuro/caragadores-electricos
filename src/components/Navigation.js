@@ -9,20 +9,20 @@ export default props => {
     // Pass on our props
     <Menu className = "menu" {...props}>
       <li className="nav-item">
-        <Link to="/mapa" className="nav-link">
+        <Link to="/" className="nav-link">
           Tipo de conexión
         </Link>
       </li>
 
       <li className="nav-item">
 
-        <Link to="/mapa" className="nav-link">
+        <Link to="/" className="nav-link">
           Reservas
       </Link>
       </li>
       <li className="nav-item">
 
-        <Link to="/mapa" className="nav-link">
+        <Link to="/alexa" className="nav-link">
           Alexa
      </Link>
       </li>
