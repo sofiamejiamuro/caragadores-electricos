@@ -22,24 +22,34 @@ export default class Mapa extends Component {
             } // callback before engine starts retrieving locations
           }
         return (
-            <div className="container container-map">
-            <Map center={center} zoom={this.state.zoom}>
-                <TileLayer
-                    attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
-                />
-                {
-                    this.state.data.map(marcador=>
-                        <Marker position={[marcador.geolocation.latitude, marcador.geolocation.longitude]} key={marcador.id}>
-                            <Popup>
-                                {marcador.state}
-                            </Popup>
-                        </Marker>
-                        )
-                }
-                <LocateControl options={locateOptions} startDirectly/>
-            </Map>
-            </div>
+            <div className="container-map">
+                <Map center={center} zoom={this.state.zoom}>
+                    <TileLayer
+                        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
+                    />
+                    {
+                        this.state.data.map(marcador=>
+                            <Marker position={[marcador.geolocation.latitude, marcador.geolocation.longitude]} key={marcador.id}>
+                                <Popup>
+                                    {marcador.state}
+                                </Popup>
+                            </Marker>
+                            )
+                    }
+                    <LocateControl options={locateOptions} startDirectly/>
+                </Map>
+                <div className="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label className="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked/> Disponible
+                    </label>
+                    <label className="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"/> Ocupado
+                    </label>
+                </div>
+                
+               
+             </div>
         );
     }
 }
