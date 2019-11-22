@@ -17,7 +17,7 @@ import TypePlugs from './views/TypePlugs';
 function App() {
   return (
     <Router>
-      <Navigation/>
+
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
 
