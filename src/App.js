@@ -17,7 +17,7 @@ import LectorQr from './views/LectorQr'
 
 function App() {
   return (
-    <Router>
+    <Router basename={window.location.pathname || ""}>
     <Navigation></Navigation>
       <div className="container p-1 padre">
         {/* <Route path="/" exact component={Login}/> */}
