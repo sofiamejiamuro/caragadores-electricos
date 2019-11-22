@@ -12,7 +12,8 @@
     "react-leaflet-locate-control": "^0.1.6",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "react-switch": "^5.0.1"
+    "react-switch": "^5.0.1",
+    "react-table": "^6.10.3"
   },
   "scripts": {
     "start": "react-scripts start",
