@@ -1,12 +1,10 @@
 .container-historial{
     text-align: justify;
     margin-top: 20px;
-   
-   
 }
 
 .historial-links {
-     margin: 35px;
+     margin: 15px;
      text-decoration: none;
      border-bottom: 1px solid  #C4C4C4;
      color: black;
@@ -19,17 +17,18 @@
     color: white;
 }
 .Selec-historial{
-  
-    margin: 35px;
+    margin: 25px;
     display: flex;
     justify-content: space-between;
+    font-size: 3px;
+    
 }
 .contenedor-buscador{
-    background-color: blue;
     margin: 35px;
+    text-align: center;
 }
 .buscador{
     width: auto;
-    height: 45px;
+    height: auto;
     border-radius: 8px;
 }

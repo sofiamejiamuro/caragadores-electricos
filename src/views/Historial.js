@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Historial.css';
-import Navigation from '../components/Navigation';
+
 
 class Historial extends React.Component {
     constructor (props){
@@ -30,19 +30,20 @@ class Historial extends React.Component {
     render (){
         return(
             <div className="container-historial">
-                <Navigation text="Historial de cargas" />
+               
                 <div className="contenedor-buscador">
                     <input type="search" placeholder="Search" className="buscador"></input>
                 </div>    
 
                 <div className="Selec-historial">
-                    <select name="Direccion" className="btn" id="boton-selec">
+                    <select name="Direccion" className="btn-sm" id="boton-selec">
                         <option value="value2" selected>UBICACIÓN</option>
-                        <option value="value1">5%</option> 
-                        <option value="value3">20%</option>
+                        <option value="value1">Candelaria</option> 
+                        <option value="value3">Hopelchén</option>
+                        <option value="value3">Carmen</option>
                     </select>
 
-                    <select name="Fecha" className="btn" id="boton-selec">
+                    <select name="Fecha" className="btn-sm" id="boton-selec">
                         <option value="value2" selected>FECHA</option>
                         <option value="value1">Más reciente</option> 
                         <option value="value3">Más antiguo</option>

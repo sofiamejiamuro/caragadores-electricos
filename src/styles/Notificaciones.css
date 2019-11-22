@@ -1,0 +1,24 @@
+.container-Noti{
+    margin: 35px;
+ 
+}
+p{
+    width: 130px;
+    font-size: 13px;
+}
+.secciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     
+}
+.selec-noti{
+    text-align: center;
+}
+#selec{
+    background-color: #12d3cf;
+    color: white;
+}
+.texto-noti{
+    margin-bottom: 50px;
+}

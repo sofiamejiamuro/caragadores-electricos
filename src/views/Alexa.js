@@ -8,7 +8,7 @@ render () {
 
         <div className="container"> 
             {/* <h1>Alexa</h1> */}
-            <p>En Compañia, pensamos siempre en ti. Por ello te traemos a Alexa 
+            <p>En Voltio Station, pensamos siempre en ti. Por ello te traemos a Alexa 
                 el asistente virtual que quiere hacerte la vida más fácil.</p>
 
                 <p>Ahora es tan fácil como ir manejando y decir: Alexa,  ¿cuál es el cargador 
