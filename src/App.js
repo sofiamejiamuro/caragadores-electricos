@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Alarma from './views/Alarma';
 import Alexa from './views/Alexa';
 import Mapa from './views/Mapa';
-// import Navigation from './components/Navigation';
+import Navigation from './components/Navigation';
 import Historial from './views/Historial';
 import Historial1 from './views/Historial1';
 import Historial2 from './views/Historial2';
