@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import './Navigation.css';
@@ -10,6 +11,7 @@ import conexion from '../img/plug.jpg';
 import alexa from '../img/amazon-alexa.png';
 import alerta from '../img/bell.png';
 import historial from '../img/battery-charge.png';
+
 
 class Navigation extends React.Component {
   render() {
@@ -28,6 +30,7 @@ class Navigation extends React.Component {
             <Nav.Link href="#ajustes"><img className="ajuste mr-2" src={ajuste} alt="ajuste"/>Ajuastes</Nav.Link>
             <Nav.Link href="#ayuda"><img className="ayuda mr-2" src={ayuda} alt="ayuda"/> Ayuda</Nav.Link>
             <Nav.Link href="#cerrar secion"><img className="cerrar mr-2" src={cerrar} alt="cerrar"/>Cerrar sesión</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>
