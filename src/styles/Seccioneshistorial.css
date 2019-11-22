@@ -1,0 +1,14 @@
+.container-SeccionesHistorial{
+    /* background-color: aqua; */
+    margin: 35px;
+    text-align: justify;
+    border: 2px  solid #C4C4C4;
+     box-shadow: 2px 2px 5px #666;
+     border-radius: 5px;
+}
+h4 {
+    background-color: #C4C4C4;
+    text-align: center;
+    color: black;
+   
+}

@@ -11,6 +11,9 @@ export default class TypePlugs extends Component {
     render() {
         return (
             <Fragment>
+
+                <Title text="Tipo de conexión" />
+
                 <div id="TypePlugs">
                     <SideBar pageWrapId={"page-wrap"} outerContainerId={"TypePlugs"} />
                 </div>
