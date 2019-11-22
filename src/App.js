@@ -17,8 +17,8 @@ import TypePlugs from './views/TypePlugs';
 function App() {
   return (
     <Router>
-
-      <div className="container p-1">
+    <Navigation></Navigation>
+      <div className="container p-1 padre">
         {/* <Route path="/" exact component={Login}/> */}
 
         <Route path="/Alarma" component={Alarma} />
