@@ -19,9 +19,10 @@ import TypePlugs from './views/TypePlugs';
 function App() {
   return (
     <Router>
-      {<Navigation />}
+      <Navigation/>
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
+
         <Route path="/Mapa" component={Mapa}/>
         {/* <Route path="/create" component={CreateNote}/>
         <Route path="/user" component={CreateUser}/> */}
@@ -31,6 +32,7 @@ function App() {
         <Route path="/Historial1" component={Historial1}/>
         <Route path="/Historial2" component={Historial2}/>
         <Route path="/Historial3" component={Historial3}/>
+        <Route path="/mapa" component={Mapa} />
         <Route path="/cargadores" component={TypePlugs} />
         {/* <Route path="/user" component={CreateUser} /> */}
 
