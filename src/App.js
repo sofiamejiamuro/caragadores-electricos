@@ -27,7 +27,7 @@ function App() {
         <Route path="/Historial1" component={Historial1} />
         <Route path="/Historial2" component={Historial2} />
         <Route path="/Historial3" component={Historial3} />
-        <Route path="/mapa" component={Mapa} />
+        <Route path="/" component={Mapa} />
         <Route path="/cargadores" component={TypePlugs} />
 
       </div>
