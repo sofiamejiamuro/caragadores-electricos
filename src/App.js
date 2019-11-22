@@ -9,7 +9,7 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <Router>
-      {<Navigation/>}
+      <Navigation/>
       <div className="container p-1">
         {/* <Route path="/" exact component={Login}/> */}
         <Route path="/Mapa" component={Mapa}/>
