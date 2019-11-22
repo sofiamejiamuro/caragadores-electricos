@@ -17,19 +17,23 @@ import TypePlugs from './views/TypePlugs';
 function App() {
   return (
     <Router>
-    <Navigation></Navigation>
-      <div className="container p-1 padre">
+    <div className = "nav" >
+      <Navigation ></Navigation>
+    </div>
+    <div className="container p-1 padre">
         {/* <Route path="/" exact component={Login}/> */}
 
         <Route path="/Alarma" component={Alarma} />
         <Route path="/Servicio-voz" component={ServicioVoz} />
         <Route path="/Historial" component={Historial} />
-        <Route path="/Historial1" component={Historial1} />
+        <Route path="/Historial1" component={Historial1}  />
         <Route path="/Historial2" component={Historial2} />
         <Route path="/Historial3" component={Historial3} />
-        <Route path="/mapa" component={Mapa} />
-        <Route path="/cargadores" component={TypePlugs} />
+        <div className = "map-box">
+          <Route path="/mapa" component={Mapa} />
+        </div>
 
+          <Route path="/cargadores" component={TypePlugs} /> 
       </div>
     </Router>
   )
