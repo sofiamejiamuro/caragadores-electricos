@@ -7,9 +7,9 @@ import './Navigation.css'
 export default props => {
   return (
     // Pass on our props
-    <Menu {...props}>
+    <Menu className="menu" {...props}>
       <li className="nav-item">
-        <Link to="/mapa" className="nav-link">
+        <Link to="/" className="nav-link">
           Tipo de conexión
         </Link>
       </li>
