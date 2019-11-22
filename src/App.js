@@ -11,6 +11,7 @@ import Historial1 from './views/Historial1';
 import Historial2 from './views/Historial2';
 import Historial3 from './views/Historial3';
 import TypePlugs from './views/TypePlugs';
+import LectorQr from './views/LectorQr'
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Historial3" component={Historial3}/>
         <Route path="/mapa" component={Mapa} />
         <Route path="/cargadores" component={TypePlugs} />
+        <Route path="/qr" component={LectorQr} />
 
       </div>
     </Router>

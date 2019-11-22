@@ -10,6 +10,20 @@ export default class Mapa extends Component {
         data:data,
         zoom: 5,
       }
+
+    filterFree = ()=>{
+        const free = data.filter(state => state.state === 'free')
+        this.setState({
+            data: free
+        })
+    }
+
+    filterBusy = ()=>{
+        const busy = data.filter(state => state.state === 'free')
+        this.setState({
+            data: busy
+        })
+    }
     
     render() {
         const center = [this.state.lat, this.state.lng]
