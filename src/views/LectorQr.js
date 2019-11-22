@@ -38,7 +38,7 @@ export default class LectorQr extends Component{
                 onError={this.handleError}
                 onScan={this.handleScan}
             />
-    <h3>{this.state.result}</h3>
+            <h3>{this.state.result}</h3>
         </div>
     )
     }

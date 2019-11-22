@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import { data } from '../data.json'
 import LocateControl from '../components/LocateControl'
@@ -59,8 +59,7 @@ export default class Mapa extends Component {
                         <input type="radio" name="busy" id="option2" autocomplete="off" checked={this.state.cheked} onChange={this.handleChange}/> Ocupado
                     </label>
                 </div>
-
-
+               
             </div>
         );
     }

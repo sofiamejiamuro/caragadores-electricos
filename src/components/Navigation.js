@@ -6,30 +6,35 @@ import './Navigation.css'
 
 export default props => {
   return (
-    // Pass on our props
-    <Menu className="menu" {...props}>
+    <Menu className = "menu" {...props}>
       <li className="nav-item">
-        <Link to="/" className="nav-link">
+        <Link to="/Cargadores" className="nav-link">
           Tipo de conexión
         </Link>
       </li>
-
       <li className="nav-item">
-
-        <Link to="/mapa" className="nav-link">
-          Recervas
+        <Link to="/" className="nav-link">
+          Reservas
       </Link>
       </li>
       <li className="nav-item">
-
-        <Link to="/mapa" className="nav-link">
+        <Link to="/Alexa" className="nav-link">
           Alexa
      </Link>
       </li>
       <li className="nav-item">
-
-        <Link to="/mapa" className="nav-link">
+        <Link to="/Notificaciones" className="nav-link">
           Notificaciones
+      </Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/Historial" className="nav-link">
+          Historial de Cargas
+      </Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/Qr" className="nav-link">
+          Lector QR
       </Link>
       </li>
     </Menu>

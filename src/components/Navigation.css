@@ -15,6 +15,7 @@ body {
   overflow: auto;
 }
 
+
 .bm-item {
   display: inline-block;
 
@@ -39,6 +40,7 @@ body {
 
 .bm-burger-bars {
   background: #373a47;
+  margin-bottom: 5% !important;
 }
 
 .bm-cross-button {
@@ -61,13 +63,8 @@ body {
   fill: #ffffff;
 }
 
-.nav-link {
-  color: black !important;
-}
+
 
 .bm-overlay {
   background: #ffffff;
-}
-.menu{
-    background-color: rgb(131, 16, 73);
 }
