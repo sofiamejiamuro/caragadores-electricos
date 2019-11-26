@@ -17,12 +17,12 @@ import LectorQr from './views/LectorQr'
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={window.location.pathname || ""}>
       <div className="nav">
       <Navigation></Navigation>
       </div>
       <div className="container p-1 padre">
-        <Route path="/" exact component={Mapa}/>
+        <Route exact path="/"  component={Mapa}/>
         <Route path="/Notificaciones" component={Notificaciones}/>
         <Route path="/Alexa" component={Alexa}/>
         <Route path="/Historial" component={Historial}/>
